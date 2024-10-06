@@ -29,7 +29,8 @@ O script permite personalização através das seguintes variáveis:
 - **PORTAINER_HTTPS_PORT**: Porta HTTPS para o Portainer (padrão: `9443`).
 - **SSH**: Porta SSH (padrão: `9989`).
 
-Além disso, você pode habilitar/desabilitar as seguintes funcionalidades ajustando as variáveis correspondentes para `1` (habilitado) ou `0` (desabilitado):
+Além disso, você pode habilitar/desabilitar as seguintes funcionalidades ajustando as variáveis correspondentes para 1 (habilitado) ou 0 (desabilitado):
+
 - **ATUALIZAR**: Atualização do sistema.
 - **DOCKER**: Instalação do Docker e Docker Compose.
 - **PORTAINER**: Instalação do Portainer.

@@ -1,5 +1,5 @@
 
-# Joplin Server Setup e Configuração do Sistema
+# Joplin Server Setup - Autoconfig
 
 ## Visão Geral
 

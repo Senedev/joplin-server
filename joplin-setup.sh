@@ -44,12 +44,10 @@ fi
 # Passo 2: Instalar o docker e o docker compose
 if [[ "$DOCKER" -eq 1 ]]; then
   echo -e "\e[33mPasso 2: Instalando o docker no sistema\e[0m"
-  sudo curl -fsSL https://get.docker.com/ | sudo sh &&
-    sudo COMPOSE_VERSION=$(curl -s https://api.github.com/repos/docker/compose/releases/latest | grep 'tag_name' | cut -d'"' -f4) &&
-    sudo curl -L "https://github.com/docker/compose/releases/download/$COMPOSE_VERSION/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose &&
-    sudo chmod +x /usr/local/bin/docker-compose &&
-    sudo usermod -aG docker $USER
-  echo -e "\e[92mO Docker ($(docker --version)) e o Docker Compose ($(docker-compose --version)) em suas versões mais recentes foram instalados com sucesso!\e[0m"
+  sudo curl -fsSL https://get.docker.com/ | sudo sh
+  sudo apt install docker-compose-plugin -y
+  sudo usermod -aG docker $USER
+  echo -e "\e[92mO Docker ($(docker --version)) e o Docker Compose ($(docker compose version)) em suas versões mais recentes foram instalados com sucesso!\e[0m"
   sudo systemctl enable docker
   sudo systemctl start docker
   echo ""

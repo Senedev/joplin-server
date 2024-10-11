@@ -3,7 +3,6 @@
 # AUTOR:            Guilherme Henrique de Sene Oliveira
 # CONTATO:          <guihenriquesene@gmail.com>
 # DATA CRIAÇÃO:     05 Outubro 2024
-# DATA ATUALIZAÇÃO: 06 Outubro 2024
 
 # ======================
 

@@ -99,9 +99,7 @@ services:
       - POSTGRES_PORT=${POSTGRES_PORT}  
       - POSTGRES_HOST=db
 EOF
-  sudo docker run -d -p ${PORTAINER_HTTP_PORT}:${PORTAINER_HTTP_PORT} -p ${PORTAINER_HTTPS_PORT}:${PORTAINER_HTTPS_PORT} --name=portainer --restart=always \
-    -v /var/run/docker.sock:/var/run/docker.sock \
-    -v portainer_data:/data portainer/portainer-ce:
+  sudo docker compose up -d
   echo -e "\e[92mO serviço foi instalado e está rodando no endereço: $URL_BASE\e[0m"
   echo ""
 fi

@@ -52,7 +52,7 @@ Além disso, você pode habilitar/desabilitar as seguintes funcionalidades ajust
    Clone o repositório ou faça o download do script diretamente:
 
    ```bash
-   git clone https://bitbucket.org/guilhermesene/joplin-server.git
+   git clone https://github.com/Senedev/joplin-server.git
    ```
 
 2. **Tornar o Script Executável**:
